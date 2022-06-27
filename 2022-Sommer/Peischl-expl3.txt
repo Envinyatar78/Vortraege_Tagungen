@@ -1,0 +1,12 @@
+\ExplSyntaxOn
+\dim_new:N \l_dantetut_testlaenge_dim
+\dim_set:Nn \l_dantetut_testlaenge_dim { \linewidth - 1cm }
+
+
+\dim_compare:nNnTF { \l_tmpa_dim } < { 2cm } { kleiner } { nicht kleiner }
+\dim_compare:nTF { 3cm <= 5cm } { true } { false }
+
+\dim_compare:nF { 3cm <= 5cm } { false }
+
+%{#1}
+\ExplSyntaxOff
